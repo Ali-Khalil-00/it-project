@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Personal Organizer</title>
+    <style>
+       
+        :root {
+            --bg-color: #0f172a;   
+            --accent-color: #38bdf8; 
+            --card-bg: #1e293b;    
+            --text-color: #f1f5f9;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color); 
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold; 
+        }
+
+        nav a:hover { color: var(--accent-color); } 
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .contact-container {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(56, 189, 248, 0.2); 
+        }
+
+        h2 { color: var(--accent-color); text-align: center; margin-top: 0; }
+
+        .form-group { margin-bottom: 20px; }
+
+        label { display: block; margin-bottom: 8px; font-weight: bold; }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            color: white;
+            border-radius: 8px;
+            box-sizing: border-box; /* ده اللي هيظبط المقاسات */
+        }
+
+        .contact-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--accent-color);
+            color: #0f172a;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s; 
+        }
+
+        .contact-btn:hover { opacity: 0.9; transform: scale(1.02); }
+
+        footer { text-align: center; padding: 20px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Personal Organizer</h1> 
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">My Courses</a>
+            <a href="add-course.html">Add Course</a>
+            <a href="contact.html">Contact Us</a> 
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-container"> 
+            <h2>Contact Me</h2>
+            <form action="#"> 
+                <div class="form-group">
+    <label>Course Name</label>
+    <input type="text" placeholder="Your Course Name" required>
+</div>
+
+<div class="form-group">
+    <label>Instructor</label>
+    <input type="text" placeholder="Instructor Name" required>
+</div>
+
+<div class="form-group">
+    <label>Credit Hours</label>
+    <input type="number" placeholder="e.g. 3" min="1" max="5" required>
+</div>
+
+<div class="form-group">
+    <label>Notes</label>
+    <textarea rows="4" placeholder="How can I help you?"></textarea>
+</div>
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+       
+    </footer>
+ <footer>
+    <div class="custom-footer">
+        designed by Ali Khalil - My Course Organizer
+    </div>
+</footer>
+</body>
+</html>
